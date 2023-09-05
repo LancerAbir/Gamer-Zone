@@ -68,7 +68,7 @@ header.header .section-container {
     align-items: center;
 }
 
-.theme-title {
+.theme-title a {
     display: flex;
     align-items: center;
     font-size: 45px;
@@ -132,7 +132,7 @@ header.header nav > ul > li > a:hover {
     background-color: var(--theme-color);
 }
 
-/* Feature Section CSS */
+/* Banner Section CSS */
 
 /* Delivery Section */
 
