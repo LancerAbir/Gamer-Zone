@@ -8,11 +8,6 @@
 
 :root {
     --theme-color: #ff42a5;
-    --theme-gradient-color: linear-gradient(
-        90deg,
-        #ff42a5 13.13%,
-        #ff42a5 87.94%
-    );
     --title-gradient-color: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
     --white-color: #fff;
     --body-font-size: 1.125em;
@@ -41,6 +36,7 @@ img {
 body {
     font-family: "Work Sans", sans-serif;
     font-size: var(--body-font-size);
+    color: var(--title-text-color);
     font-style: normal;
     line-height: 30px;
     font-weight: 400;
@@ -115,13 +111,15 @@ header.header nav > ul > li > a:hover {
 }
 
 .menu-follow a {
-    display: flex;
     cursor: pointer;
 }
 
 .menu-follow a img {
     margin-left: 14px;
-    width: 33px;
+    max-width: 33px;
+    position: relative;
+    top: 4px;
+    left: 0;
 }
 
 .menu-follow:hover a {
@@ -133,6 +131,52 @@ header.header nav > ul > li > a:hover {
 }
 
 /* Banner Section CSS */
+
+/* Banner Content */
+section.banner .section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-content h3 {
+    font-size: 2.667em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.banner-content h2 {
+    font-size: 5.278em;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 70px 0;
+}
+
+.banner-content ul > li {
+    list-style: none;
+    margin-bottom: 17px;
+}
+
+.banner-content ul {
+    display: block;
+}
+
+.banner-content ul > li > a {
+    font-size: 1.25em;
+    font-weight: 500;
+    color: var(--title-text-color);
+}
+
+.banner-content ul > li > a img {
+    position: relative;
+    right: 0;
+    top: 4px;
+    margin-right: 10px;
+}
 
 /* Delivery Section */
 
