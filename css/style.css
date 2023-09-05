@@ -1,5 +1,6 @@
+/* Work Sans Font by Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap");
 /* Main CSS */
-
 * {
     margin: 0;
     padding: 0;
@@ -31,7 +32,7 @@ img {
 }
 
 body {
-    font-family: "Lato", sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-size: 18px;
     font-style: normal;
     line-height: 30px;
