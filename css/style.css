@@ -721,8 +721,111 @@ footer.footer ul > li > a {
         width: 28%;
         margin-bottom: 50px;
     }
+
+    .card-box:hover:before {
+        position: absolute;
+        content: "";
+        display: block;
+        background-color: #000;
+        top: 0;
+        left: 0;
+        width: 342px;
+        height: 400px;
+        z-index: 9;
+        opacity: 0.5;
+        border-radius: 16px;
+    }
 }
 
 /* Tablet Devices */
 @media screen and (min-width: 425px) and (max-width: 768px) {
+    header.header nav > ul,
+    section.banner .section-container,
+    header.header .section-container,
+    .gamer-main,
+    .games-card,
+    .feature-one,
+    .feature-two,
+    .game-list-btn,
+    .careers-all {
+        display: contents;
+    }
+
+    .card-box:hover:before {
+        position: absolute;
+        content: "";
+        display: block;
+        background-color: #000;
+        top: 0;
+        left: 185px;
+        width: 342px;
+        height: 400px;
+        z-index: 9;
+        opacity: 0.5;
+        border-radius: 16px;
+    }
+
+    .sub-image img {
+        display: none;
+    }
+
+    .online-games .section-title {
+        text-align: left;
+
+        font-size: 9px;
+    }
+
+    .section-title-two {
+        width: 450px;
+    }
+
+    .section-title-two h3 {
+        font-size: 17px;
+        margin-bottom: -25px;
+    }
+
+    .careers-img {
+        position: relative;
+    }
+
+    .careers-list-2 ul > li {
+        text-align: left;
+    }
+
+    .careers-content {
+        padding: 30px;
+    }
+
+    header.header nav > ul > li {
+        display: block;
+        margin-right: 32px;
+        padding: 27px;
+    }
+
+    section.gamer .gamer-image {
+        width: 97%;
+    }
+
+    .gamer-content {
+        width: 90%;
+    }
+
+    .card-box {
+        padding-left: 182px;
+        margin-bottom: 50px;
+    }
+
+    .section-title-two {
+        margin-left: -353px;
+        display: block;
+    }
+
+    .footer-social img,
+    .footer-menu-bottom > ul > li {
+        margin-bottom: 42px;
+    }
+    .game-list {
+        width: 28%;
+        margin-bottom: 50px;
+    }
 }
