@@ -55,14 +55,17 @@ button.section-btn {
     cursor: pointer;
 }
 
-.section-title h3 {
+.section-title h3,
+.section-title-two h3 {
     color: #0b0223;
     font-weight: 700;
     font-size: 3em;
     padding-bottom: 35px;
+    line-height: 60px;
 }
 
-.section-title h3 span {
+.section-title h3 span,
+.section-title-two h3 span {
     background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -154,7 +157,10 @@ header.header nav > ul > li > a:hover {
 /* Banner Section CSS */
 
 section.banner {
-    padding: 30px 0;
+    padding-top: 30px;
+    background-image: url("/images/Group 14.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 section.banner .section-container {
@@ -252,10 +258,10 @@ section.gamer {
         rgba(255, 66, 165, 0.03) 13.13%,
         rgba(255, 66, 165, 0.03) 87.94%
     );
+    padding: 55px 0;
 }
 
-section.gamer .section-container {
-    padding: 55px 0;
+.gamer-main {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -338,7 +344,50 @@ section.online-games {
 } */
 
 /* feature-top Section Style CSS */
+.feature-one {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
+.feature-two {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.feature-one .feature-content {
+    width: 384px;
+    margin-right: 300px;
+}
+
+.feature-two .feature-content {
+    width: 500px;
+    margin-left: 300px;
+}
+
+.feature-top .section-title-two {
+    text-align: end;
+}
+
+section.feature-top,
+section.feature-bottom {
+    position: relative;
+    padding-top: 50px;
+    margin-bottom: 180px;
+}
+
+section.feature-top .sub-image img {
+    position: absolute;
+    bottom: -60px;
+    right: 700px;
+}
+
+section.feature-bottom .sub-image img {
+    position: absolute;
+    bottom: -60px;
+    left: 800px;
+}
 /* feature-bottom Section Style CSS */
 
 /* Careers Section Style CSS */
