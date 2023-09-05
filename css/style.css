@@ -58,6 +58,7 @@ button.section-btn {
     color: var(--white-color);
     font-size: 1.25em;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .section-title h3 {
@@ -275,6 +276,11 @@ section.gamer .gamer-image {
 }
 
 /* Online Game Section Style CSS */
+section.online-games {
+    padding: 120px 0;
+    margin-bottom: 120px;
+}
+
 .online-games .section-title {
     text-align: center;
     margin: 0 auto;
@@ -291,22 +297,161 @@ section.gamer .gamer-image {
     font-weight: 500;
     line-height: 30px;
     max-width: 342px;
+    cursor: pointer;
 }
 
 .card-box img {
     margin-bottom: 24px;
     border-radius: 16px;
     transition: 0.3s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
-
-section.online-games {
-    padding: 120px 0;
-}
+/* 
+.card-box img:hover::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    content: " Hello";
+    display: block;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.5s;
+} */
 
 /* Offer Section Style CSS */
 
-/* Instagram Style CSS */
+/* Careers Section Style CSS */
+section.careers-section {
+    background: linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%);
+}
 
-/* Subscribe Style CSS */
+.careers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Game list Style CSS */
+.game-list {
+    display: flex;
+    align-items: center;
+    color: #0b0223;
+    font-size: 20px;
+    font-weight: 100;
+    transition: 0.5s;
+    border: 1.5px solid #fff;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.game-list img {
+    max-width: 60px;
+    border-radius: 50px;
+    margin-right: 16px;
+}
+
+.game-list-btn {
+    display: grid;
+    gap: 37px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+section.game-list-section {
+    padding: 120px 0;
+}
+
+.game-list:hover {
+    border: 1.5px solid #ff42a5;
+    background: var(
+        --Linear,
+        linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 /* Footer Section */
+footer.footer {
+    padding: 120px 0;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #0b0223;
+    color: var(--white-color);
+}
+
+footer.footer .theme-title a {
+    display: block;
+    margin-bottom: 66px;
+}
+
+footer.footer .theme-title a span {
+    color: #fff;
+}
+
+footer.footer ul > li > a {
+    color: var(--white-color);
+}
+
+.footer-menu-top ul > li {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.footer-menu-top ul > li > a {
+    font-size: 1.125em;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.footer-menu-top {
+    margin-bottom: 56px;
+}
+
+.footer-menu-top ul > li > a:hover {
+    color: var(--theme-color);
+}
+
+.footer-social ul > li {
+    display: inline-block;
+    margin-right: 40px;
+    max-width: 57px;
+}
+
+.footer-social ul > li > a {
+    transition: 0.3s;
+}
+
+.footer-social ul > li > a:hover {
+    width: 90px;
+}
+
+.footer-social {
+    margin-bottom: 74px;
+}
+
+.footer-menu-bottom ul > li {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.footer-menu-bottom ul > li > a {
+    transition: 0.3s;
+    font-size: 1em;
+    font-weight: 500;
+    /* color: rgba(255, 255, 255, 0.6); */
+    color: red;
+}
+
+.footer-menu-bottom ul > li > a:hover {
+    color: var(--theme-color);
+}
+
+.footer-menu-bottom {
+    margin-bottom: 23px;
+}
