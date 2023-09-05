@@ -6,6 +6,11 @@
     padding: 0;
 }
 
+/* .block {
+    display: block;
+    opacity: 0;
+} */
+
 :root {
     --theme-color: #ff42a5;
     --title-gradient-color: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
@@ -640,26 +645,84 @@ footer.footer ul > li > a {
 
 /* Mobile Devices */
 
-@media screen and (max-width: 576px) {
-    .container {
-        grid-template-areas:
-            "header"
-            "nav" Tablet
-            "sidebar"
-            "advertise"
-            "main"
-            "footer";
+@media screen and (max-width: 425px) {
+    header.header nav > ul,
+    section.banner .section-container,
+    header.header .section-container,
+    .gamer-main,
+    .games-card,
+    .feature-one,
+    .feature-two,
+    .game-list-btn,
+    .careers-all {
+        display: contents;
+    }
+
+    .sub-image img {
+        display: none;
+    }
+
+    .online-games .section-title {
+        text-align: left;
+
+        font-size: 9px;
+    }
+
+    .section-title-two {
+        width: 450px;
+    }
+
+    .section-title-two h3 {
+        font-size: 17px;
+        margin-bottom: -25px;
+    }
+
+    .careers-img {
+        position: relative;
+    }
+
+    .careers-list-2 ul > li {
+        text-align: left;
+    }
+
+    .careers-content {
+        padding: 30px;
+    }
+
+    header.header nav > ul > li {
+        display: block;
+        margin-right: 32px;
+        padding: 27px;
+    }
+
+    section.gamer .gamer-image {
+        width: 97%;
+    }
+
+    .gamer-content {
+        width: 90%;
+    }
+
+    .card-box {
+        padding-left: 46px;
+        margin-bottom: 50px;
+    }
+
+    .section-title-two {
+        margin-left: -353px;
+        display: block;
+    }
+
+    .footer-social img,
+    .footer-menu-bottom > ul > li {
+        margin-bottom: 42px;
+    }
+    .game-list {
+        width: 28%;
+        margin-bottom: 50px;
     }
 }
 
 /* Tablet Devices */
-@media screen and (min-width: 576px) and (max-width: 900px) {
-    .container {
-        grid-template-areas:
-            "header     header"
-            "nav         nav"
-            "sidebar    advertise"
-            "main        main "
-            "footer      footer";
-    }
+@media screen and (min-width: 425px) and (max-width: 768px) {
 }
