@@ -20,14 +20,7 @@
     color: var(--theme-color);
     font-size: var(--body-font-size);
 }
-
-h2 {
-    color: var(--secondary-color);
-    font-size: var(--tile-font-size);
-}
-p {
-    font-size: var(--description-font-size); 
-} */
+ */
 
 img {
     max-width: 100%;
@@ -50,6 +43,39 @@ a {
 .section-container {
     width: 1440px;
     margin: 0 auto;
+}
+
+button.rogue,
+button.section-btn {
+    text-transform: uppercase;
+    padding: 21px 40px;
+    border-radius: 48px;
+    border: 0;
+    background: var(
+        --Linear,
+        linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%)
+    );
+    color: var(--white-color);
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.section-title h3 {
+    color: #0b0223;
+    font-weight: 700;
+    font-size: 3em;
+    padding-bottom: 35px;
+}
+
+.section-title h3 span {
+    background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-title p {
+    margin-bottom: 32px;
 }
 
 /* Header Section CSS */
@@ -132,7 +158,10 @@ header.header nav > ul > li > a:hover {
 
 /* Banner Section CSS */
 
-/* Banner Content */
+section.banner {
+    padding: 30px 0;
+}
+
 section.banner .section-container {
     display: flex;
     justify-content: space-between;
@@ -178,9 +207,101 @@ section.banner .section-container {
     margin-right: 10px;
 }
 
-/* Delivery Section */
+button.rogue,
+button.section-btn {
+    text-transform: uppercase;
+    padding: 21px 40px;
+    border-radius: 48px;
+    border: 0;
+    background: var(
+        --Linear,
+        linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%)
+    );
+    color: var(--white-color);
+    font-size: 1.25em;
+    font-weight: 600;
+}
 
-/* Reviews Section Style CSS */
+button.rogue {
+    background: #4ec5f7;
+}
+
+.banner-btn button {
+    margin-right: 24px;
+}
+
+/* We Are Gamer Section  Style CSS */
+section.gamer {
+    background: linear-gradient(
+        90deg,
+        rgba(255, 66, 165, 0.03) 13.13%,
+        rgba(255, 66, 165, 0.03) 87.94%
+    );
+}
+
+section.gamer .section-container {
+    padding: 55px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.gamer .gamer-image {
+    width: 178%;
+}
+
+.gamer-content {
+    text-align: right;
+}
+
+.gamer-content button {
+    margin-bottom: 24px;
+}
+
+.gamer-content p.purpose {
+    line-height: 45px;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.gamer-content p.quote {
+    font-weight: 700;
+    line-height: 45px;
+    font-size: 1.7em;
+}
+
+.gamer-content {
+    width: 100%;
+}
+
+/* Online Game Section Style CSS */
+.online-games .section-title {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+
+.games-card {
+    display: flex;
+    gap: 24px;
+}
+
+.card-box {
+    font-size: 1.12em;
+    font-weight: 500;
+    line-height: 30px;
+    max-width: 342px;
+}
+
+.card-box img {
+    margin-bottom: 24px;
+    border-radius: 16px;
+    transition: 0.3s;
+}
+
+section.online-games {
+    padding: 120px 0;
+}
 
 /* Offer Section Style CSS */
 
