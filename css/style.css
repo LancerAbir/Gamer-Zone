@@ -1,0 +1,57 @@
+/* Main CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* :root {
+    --primary-color: red;
+    --secondary-color: green;
+    --body-font-size: 16px;
+    --tile-font-size: 16px;
+    --description-font-size: 16px;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: var(--body-font-size);
+}
+
+h2 {
+    color: var(--secondary-color);
+    font-size: var(--tile-font-size);
+}
+p {
+    font-size: var(--description-font-size); 
+} */
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+/* Similar CSS Style */
+
+/* Header Section CSS */
+
+/* Feature Section CSS */
+
+/* Delivery Section */
+
+/* Reviews Section Style CSS */
+
+/* Offer Section Style CSS */
+
+/* Instagram Style CSS */
+
+/* Subscribe Style CSS */
+
+/* Footer Section */
