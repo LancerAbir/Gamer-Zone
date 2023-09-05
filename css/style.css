@@ -16,12 +16,6 @@
     --description-font-size: 16px;
 }
 
-/* h1 {
-    color: var(--theme-color);
-    font-size: var(--body-font-size);
-}
- */
-
 img {
     max-width: 100%;
 }
@@ -199,6 +193,11 @@ section.banner .section-container {
     font-size: 1.25em;
     font-weight: 500;
     color: var(--title-text-color);
+    transition: 0.3s;
+}
+
+.banner-content ul > li > a:hover {
+    color: var(--theme-color);
 }
 
 .banner-content ul > li > a img {
@@ -221,10 +220,25 @@ button.section-btn {
     color: var(--white-color);
     font-size: 1.25em;
     font-weight: 600;
+    transition: 0.4s;
 }
 
 button.rogue {
     background: #4ec5f7;
+    transition: 0.3s;
+}
+
+button.rogue:hover {
+    background: var(
+        --Linear,
+        linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%)
+    );
+    color: #0b0223;
+}
+
+button.section-btn:hover {
+    background: #4ec5f7;
+    color: #0b0223;
 }
 
 .banner-btn button {
@@ -278,7 +292,6 @@ section.gamer .gamer-image {
 /* Online Game Section Style CSS */
 section.online-games {
     padding: 120px 0;
-    margin-bottom: 120px;
 }
 
 .online-games .section-title {
@@ -307,7 +320,7 @@ section.online-games {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 /* 
 .card-box img:hover::before {
@@ -324,16 +337,91 @@ section.online-games {
     transition: 0.5s;
 } */
 
-/* Offer Section Style CSS */
+/* feature-top Section Style CSS */
+
+/* feature-bottom Section Style CSS */
 
 /* Careers Section Style CSS */
 section.careers-section {
     background: linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%);
+    padding: 120px 0;
+    color: var(--white-color);
+    position: relative;
 }
 
-.careers {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.careers-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.careers-content h3 {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 24px;
+}
+
+.careers-content p {
+    margin-bottom: 32px;
+}
+
+.careers-list ul > li,
+.careers-list-2 ul > li {
+    list-style: none;
+}
+
+.careers-list-2 ul > li {
+    text-align: right;
+}
+
+.careers-list ul > li > a,
+.careers-list-2 ul > li > a {
+    color: var(--white-color);
+    font-size: 1.25em;
+    line-height: 40px;
+    transition: 0.3s;
+}
+
+.careers-list ul > li > a:hover,
+.careers-list-2 ul > li > a:hover {
+    color: #4ec5f7;
+}
+
+.careers-all {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+button.careers-btn {
+    cursor: pointer;
+    border-radius: 48px;
+    background: #fff;
+    padding: 21px 40px;
+    border: 0;
+    font-size: 1.25em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--theme-color);
+    transition: 0.3s;
+    border: 0;
+}
+
+button.careers-btn:hover {
+    background-color: #4ec5f7;
+    color: #0b0223;
+    border: 0;
+}
+
+.careers-content {
+    width: 47%;
+}
+
+.careers-list > ul {
+    padding-left: 0px;
 }
 
 /* Game list Style CSS */
@@ -347,6 +435,7 @@ section.careers-section {
     border: 1.5px solid #fff;
     border-radius: 50px;
     padding: 10px;
+    background-color: var(--white-color);
 }
 
 .game-list img {
@@ -363,6 +452,11 @@ section.careers-section {
 
 section.game-list-section {
     padding: 120px 0;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 66, 165, 0.03) 13.13%,
+        rgba(255, 66, 165, 0.03) 87.94%
+    );
 }
 
 .game-list:hover {
@@ -374,6 +468,11 @@ section.game-list-section {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-color: var(--white-color);
+}
+
+.game-list:hover {
+    background-color: var(--white-color);
 }
 
 /* Footer Section */
